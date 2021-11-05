@@ -6,9 +6,74 @@ html{
     font-family: sans-serif;
 }
 body{ 
+    display: grid; 
+    grid-template-areas: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+    width: auto;
+    margin: auto;
     background-color:black;
     color: white;
 }
+body > h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 0 20px 0 20px;
+    margin: 5px ;
+}
+.steps{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 25px;
+    font-weight: 20;
+    padding: 0 20px 0 20px;
+    margin: 5px ;
+}
+#txtUsername{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0 20px 0 20px;
+    margin: 10px ;
+}
+body > button{
+    border-radius: 10px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px ;
+}
+#tblBoard{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+body > main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 75%;   
+}
+body > footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4; 
+    align-items: center; 
+    color:white;
+    padding: 20px;
+    text-align: center;
+} 
 .cell{
     width: 50px;
     height: 50px;
@@ -17,7 +82,7 @@ body{
     background-color: gray;
 }
 .wall{
-    background-color: darkolivegreen;
+    background-color: black;  
 }
 .target{
     background-color: gold;
