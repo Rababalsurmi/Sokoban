@@ -38,7 +38,7 @@
             //Place the BOXES
             board[2][2].gameElement = BOX;
             board[3][8].gameElement = BOX;
-            board[7][4].gameElement = BOX;
+            board[5][5].gameElement = BOX;
             board[6][2].gameElement = BOX;
 
             //Put some WALLS
